@@ -22,8 +22,14 @@
         <activity
             android:name=".AppBarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CollapsingActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CollapsingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DrawerActivity"></activity>
     </application>
 
 </manifest>

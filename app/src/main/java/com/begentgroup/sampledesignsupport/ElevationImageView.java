@@ -22,7 +22,6 @@ public class ElevationImageView extends ImageView {
 
 
     public float getElevation() {
-        Log.i("ElevationImageView", "getElevation");
         if (Build.VERSION.SDK_INT >= 21) {
             return super.getElevation();
         } else {

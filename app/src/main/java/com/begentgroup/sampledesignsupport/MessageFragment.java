@@ -3,6 +3,7 @@ package com.begentgroup.sampledesignsupport;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,12 +56,17 @@ public class MessageFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        Log.i("MessageFragment", "onResume : " + message);
+        if (getUserVisibleHint()) {
+            getActivity().setTitle(message);
+        }
 //        getActivity().setTitle(message);
     }
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
+        Log.i("MessageFragment", "setUserVisibleHint : " + message);
         if (getActivity() == null) return;
         if (isVisibleToUser) {
             getActivity().setTitle(message);

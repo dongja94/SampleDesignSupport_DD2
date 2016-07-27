@@ -18,7 +18,9 @@
         <activity android:name=".TabLayoutActivity" />
         <activity android:name=".TabPagerActivity" />
         <activity android:name=".TextInputActivity" />
-        <activity android:name=".FABActivity"></activity>
+        <activity android:name=".FABActivity" />
+        <activity android:name=".AppBarActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

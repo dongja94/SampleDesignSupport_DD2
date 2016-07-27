@@ -18,4 +18,9 @@
         app:fabSize="normal"
         app:rippleColor="#e0e0e0"
         android:layout_gravity="right|end|bottom"/>
+    <TextView
+        android:text="Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end|bottom"/>
 </android.support.design.widget.CoordinatorLayout>

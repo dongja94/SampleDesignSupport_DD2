@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".TabLayoutActivity" />
         <activity android:name=".TabPagerActivity" />
-        <activity android:name=".TextInputActivity"></activity>
+        <activity android:name=".TextInputActivity" />
+        <activity android:name=".FABActivity"></activity>
     </application>
 
 </manifest>

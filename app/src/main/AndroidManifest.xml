@@ -19,7 +19,10 @@
         <activity android:name=".TabPagerActivity" />
         <activity android:name=".TextInputActivity" />
         <activity android:name=".FABActivity" />
-        <activity android:name=".AppBarActivity"
+        <activity
+            android:name=".AppBarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CollapsingActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

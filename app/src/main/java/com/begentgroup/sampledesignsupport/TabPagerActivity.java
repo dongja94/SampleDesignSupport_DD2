@@ -19,6 +19,23 @@ public class TabPagerActivity extends AppCompatActivity {
         pager = (ViewPager)findViewById(R.id.pager);
         mAdapter = new MyPagerAdapter(getSupportFragmentManager());
 
+        pager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                setTitle("pager : " + position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
         pager.setAdapter(mAdapter);
 
         tabs.setupWithViewPager(pager);
@@ -27,6 +44,7 @@ public class TabPagerActivity extends AppCompatActivity {
         for (int i = 0; i < 10; i++) {
             tabs.addTab(tabs.newTab().setText("TT"+i));
         }
+
 
     }
 }

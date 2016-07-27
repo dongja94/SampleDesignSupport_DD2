@@ -36,6 +36,10 @@
         <activity
             android:name=".NaviDrawerActivity"
             android:label="@string/title_activity_navi_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomNavigationActivity"
+            android:label="@string/title_activity_custom_navigation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
